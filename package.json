@@ -18,7 +18,8 @@
     "dotenv": "^17.2.1",
     "express": "^5.1.0",
     "tailwindcss": "^4.1.11",
-    "tailwindcss-animated": "^2.0.0"
+    "tailwindcss-animated": "^2.0.0",
+    "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@iconify/tailwind4": "^1.0.6",
