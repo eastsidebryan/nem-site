@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:title" content="Nkechi Evangelical Ministry">
+  <meta property="og:description" content="Nkechi Evangelical Ministry (also known as Zion City God's Dwelling Place) is an inter-denominational ministry dedicated to spreading the gospel of Jesus Christ.">
+  <meta property="og:url" content="https://nkechievangelicalministry.org">
+  <meta property="og:image" content="https://nkechievangelicalministry.org/images/link-preview.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="../images/logo.png">
+  <link href="../style/styles.css" rel="stylesheet">
+  <title>Nkechi Evangelical Ministry Sermons</title>
+</head>
+<body class="bg-[#FAF9F6] dark:bg-[#121212] font-[poppins] flex flex-col px-6 md:px-24"> 
+  <nav class="nav-tab bg-[#2E8B8B] dark:bg-[#1B4B4B] hidden md:flex flex-row justify-between items-center px-6 lg:px-8 py-5 lg:py-4 font-[montserrat] font-bold md:text-sm text-base text-white shadow-2xs shadow-gray-500 fixed top-0 left-0 right-0 z-50">
+
+    <a href="../index.html">
+      <div class="logo w-10 h-10 bg-cover" style="background-image: url(/images/logo.png);"></div>
+    </a>
+
+    <div class="nav-links-tab flex flex-row items-center w-fit gap-8">
+      <a class="hover:underline underline-offset-4" href="../index.html">Home</a>
+      <a class="hover:underline underline-offset-4" href="about.html">About</a>
+      <a class="hover:underline underline-offset-4" href="events.html">Events</a>
+      <a class="hover:underline underline-offset-4" href="contact.html">Contact</a>
+      <a class="hover:underline underline-offset-4" href="give.html">Give</a>
+    </div>
+
+    <a href="live.html" class="watch-live bg-[#000000] dark:bg-[#FAF9F6] p-2 rounded-full flex justify-center items-center cursor-pointer hover:shadow-xl shadow-white">
+      <p class="text-white dark:text-[#000000]">Watch Live</p>
+    </a>
+
+  </nav>
+  
+  <nav class="nav-mobile bg-[#2E8B8B] dark:bg-[#1B4B4B] flex md:hidden flex-row justify-between items-center px-4 py-3 font-[montserrat] font-bold text-sm text-white shadow-2xl shadow-gray-400 dark:shadow-black fixed top-0 left-0 right-0 z-50">
+
+    <a href="../index.html">
+      <div class="logo w-10 h-10 bg-cover" style="background-image: url(/images/logo.png);"></div>
+    </a>
+
+    <div class="button-nav flex flex-row-reverse justify-center items-center gap-4">
+      <div class="nav-links-mobile relative md:hidden flex flex-row items-center w-fit gap-8">
+        <!-- Hamburger Button -->
+        <button id="mobile-menu-toggle" class="flex items-center px-3 py-2 border rounded text-white border-white">
+          <!-- Icon -->
+          <iconify-icon icon="material-symbols:menu"></iconify-icon>
+        </button>
+
+        <!-- Dropdown Menu -->
+        <div id="mobile-menu" class="absolute right-0 mt-60 w-80 bg-white rounded-lg shadow-lg hidden">
+          <a href="../index.html" class="block px-4 py-2 text-gray-800">Home</a>
+          <a href="about.html" class="block px-4 py-2 text-gray-800">About</a>
+          <a href="events.html" class="block px-4 py-2 text-gray-800">Events</a>
+          <a href="contact.html" class="block px-4 py-2 text-gray-800">Contact</a>
+          <a href="give.html" class="block px-4 py-2 text-gray-800">Give</a>
+        </div>
+      </div>
+
+      <a href="live.html" class="watch-live bg-[#000000] dark:bg-[#FAF9F6] p-2 rounded-full flex justify-center items-center">
+        <p class="text-white dark:text-[#000000]">Watch Live</p>
+      </a>
+    </div>
+    
+  </nav>
+
+  <section data-animate-up-on-scroll class="hero dark:text-white mt-26 flex flex-col gap-6">
+
+    <h1 class="text-4xl text-center font-bold">Watch Live</h1>
+
+  </section>
+
+    <!-- New "Live" section with an embedded player -->
+    <section data-animate-up-on-scroll class="live-stream dark:text-white mt-10 flex flex-col gap-4 mb-8">
+        <!-- <h1 class="text-2xl md:text-3xl font-bold">Live Stream</h1> -->
+        <!-- Container for the embedded video player -->
+        <div data-animate-left-on-scroll id="live-stream-player" class="w-full">
+            <p>Checking for live sermons...</p>
+        </div>
+    </section>
+
+    <!-- Existing "All Sermons" section -->
+    <section data-animate-up-on-scroll class="all-sermons dark:text-white flex flex-col gap-4">
+        <div class="flex flex-row justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold">All Sermons</h1>
+            <a href="https://www.youtube.com/@nkechievangelicalministry6563/streams" target="_blank" rel="noopener noreferrer" class="text-white dark:text-black hover:text-black bg-black hover:bg-gray-400 dark:bg-white px-4 py-1.5 rounded-2xl transition-all duration-200">View All</a>
+        </div>
+        
+        <!-- The container for the sermon videos -->
+        <!-- The content of this div will be populated by JavaScript -->
+        <div data-animate-left-on-scroll class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <!-- Initial placeholder or loading message -->
+            <p>Loading recent sermons...</p>
+        </div>
+    </section>
+    
+    <!-- JavaScript to fetch and display the videos -->
+    <script>
+        // Replace this with your actual YouTube Data API Key
+        const API_KEY = 'AIzaSyDfQYnnMacN4mdHij1_YdnHHJAjJzueLPI'; 
+        // This is the channel's "uploads" playlist ID
+        const PLAYLIST_ID = 'UU9RmaPmtfVYWJuYig1Q_k3Q';
+        // This is the channel's ID
+        const CHANNEL_ID = 'UC9RmaPmtfVYWJuYig1Q_k3Q';
+
+        /**
+         * Fetches and displays the current or most recent live stream from the channel.
+         */
+        async function fetchAndDisplayLiveStream() {
+            const liveStreamPlayerContainer = document.getElementById('live-stream-player');
+            liveStreamPlayerContainer.innerHTML = '<p>Checking for live sermons...</p>';
+
+            try {
+                let videoId = null;
+                let videoTitle = 'Loading...';
+
+                // First, try to find an active live stream
+                let liveUrl = `https://www.googleapis.com/youtube/v3/search?part=id,snippet&channelId=${CHANNEL_ID}&eventType=live&type=video&maxResults=1&key=${API_KEY}`;
+                let response = await fetch(liveUrl);
+                if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                let data = await response.json();
+
+                // Check if a live stream was found
+                if (data.items.length > 0) {
+                    videoId = data.items[0].id.videoId;
+                    videoTitle = data.items[0].snippet.title;
+                } else {
+                    // If not live, find the single most recently uploaded video (which would be the latest completed stream)
+                    let latestUrl = `https://www.googleapis.com/youtube/v3/search?part=id,snippet&channelId=${CHANNEL_ID}&order=date&type=video&maxResults=1&key=${API_KEY}`;
+                    response = await fetch(latestUrl);
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    data = await response.json();
+                    
+                    if (data.items.length > 0) {
+                        videoId = data.items[0].id.videoId;
+                        videoTitle = data.items[0].snippet.title;
+                    }
+                }
+
+                if (videoId) {
+                    // Embed the video using an iframe
+                    const embeddedVideoHTML = `
+                        <div class="relative w-full rounded-2xl overflow-hidden aspect-video">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/${videoId}" 
+                                title="${videoTitle}"
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <h1 class="title text-lg font-semibold break-words line-clamp-2 mt-2">${videoTitle}</h1>
+                    `;
+                    liveStreamPlayerContainer.innerHTML = embeddedVideoHTML;
+                } else {
+                    liveStreamPlayerContainer.innerHTML = '<p class="text-gray-500">No live streams found at this time.</p>';
+                }
+
+            } catch (error) {
+                console.error("Error fetching live stream:", error);
+                liveStreamPlayerContainer.innerHTML = '<p class="text-red-500">Failed to load live stream. Please check your network connection or API key.</p>';
+            }
+        }
+
+        /**
+         * Fetches recent videos from a YouTube playlist and displays them on the page.
+         */
+        async function fetchAndDisplaySermons() {
+            // Fetch more results than we need to have a buffer for filtering out duplicates and live streams.
+            const maxResults = 7; 
+            const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&playlistId=${PLAYLIST_ID}&maxResults=${maxResults}&key=${API_KEY}`;
+            
+            const sermonsContainer = document.querySelector('.all-sermons .grid');
+            
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+                
+                sermonsContainer.innerHTML = ''; 
+
+                if (data.items.length === 0) {
+                    sermonsContainer.innerHTML = '<p class="text-gray-500">No recent sermons found. Please check the playlist ID or API key.</p>';
+                    return;
+                }
+                
+                const displayedVideoIds = new Set();
+                const videosToDisplay = [];
+                
+                // Iterate through the fetched videos, filtering for uniqueness and non-live content
+                for (const item of data.items) {
+                    const videoId = item.snippet.resourceId.videoId;
+                    const isLive = item.snippet.liveBroadcastContent === 'live';
+
+                    // Only add the video if its ID is unique and it's not an ongoing live stream
+                    if (!displayedVideoIds.has(videoId) && !isLive) {
+                        displayedVideoIds.add(videoId);
+                        videosToDisplay.push(item);
+                    }
+                    
+                    // Stop once we have 6 videos to display
+                    if (videosToDisplay.length >= 3) {
+                        break;
+                    }
+                }
+                
+                // If we don't have enough videos after filtering, display a message
+                if (videosToDisplay.length === 0) {
+                    sermonsContainer.innerHTML = '<p class="text-gray-500">No recent sermons found that can be displayed.</p>';
+                    return;
+                }
+
+                // Loop through the filtered list of videos to display them
+                videosToDisplay.forEach(item => {
+                    const title = item.snippet.title;
+                    const thumbnailUrl = item.snippet.thumbnails.high ? item.snippet.thumbnails.high.url : 'https://placehold.co/480x360/e5e7eb/6b7280?text=No+Image';
+                    const videoId = item.snippet.resourceId.videoId;
+
+                    const sermonLink = document.createElement('a');
+                    sermonLink.href = `https://www.youtube.com/watch?v=${videoId}`;
+                    sermonLink.setAttribute('data-link-type', 'external');
+                    sermonLink.rel = 'noopener noreferrer';
+                    sermonLink.classList.add('sermon-link', 'flex', 'flex-col', 'gap-2', 'rounded-2xl', 'transition-transform', 'duration-300', 'hover:scale-105');
+
+                    const sermonDiv = document.createElement('div');
+                    sermonDiv.classList.add('sermon', 'flex', 'flex-col', 'gap-2');
+
+                    const imgDiv = document.createElement('div');
+                    imgDiv.classList.add('sermon-img', 'bg-gray-200', 'rounded-xl', 'aspect-video', 'w-full');
+                    imgDiv.style.backgroundImage = `url('${thumbnailUrl}')`;
+
+                    const titleH1 = document.createElement('h1');
+                    titleH1.classList.add('title', 'text-lg', 'font-semibold', 'break-words', 'line-clamp-2');
+                    titleH1.textContent = title;
+
+                    sermonDiv.appendChild(imgDiv);
+                    sermonDiv.appendChild(titleH1);
+                    sermonLink.appendChild(sermonDiv);
+                    sermonsContainer.appendChild(sermonLink);
+                });
+
+            } catch (error) {
+                console.error("Error fetching YouTube videos:", error);
+                sermonsContainer.innerHTML = '<p class="text-red-500">Failed to load sermons. Please check your network connection or API key.</p>';
+            }
+        }
+
+        // Run both functions when the page is fully loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            fetchAndDisplayLiveStream();
+            fetchAndDisplaySermons();
+        });
+    </script>
+
+  <section data-animate-up-on-scroll class="flex flex-col justify-center items-center py-10 px-14 gap-15">
+
+    <div data-animate-left-on-scroll class="donate flex flex-col text-center gap-3">
+
+      <h1 class="text-3xl text-black dark:text-white font-bold">Support the Mission.</h1>
+
+      <p class="text-xl text-[#666666] font-semibold">Give to Nkechi Evangelical Ministry now.</p>
+
+      <a data-animate-up-on-scroll href="give.html" class="watch-live bg-[#000000] dark:bg-[#FAF9F6] px-4 py-2 rounded-full flex justify-center items-centercursor-pointer hover:shadow-xl shadow-gray-400">
+        <p class="text-white font-bold dark:text-[#000000]">Donate</p>
+      </a>
+
+    </div>
+
+  </section>
+    
+  <footer class="bg-[#FFFFFF] -mx-6 md:-mx-28 dark:bg-[#7A7A7A] text-black py-12">
+    <div class="container mx-auto px-4 flex flex-row flex-wrap lg:grid lg:grid-cols-6 gap-8 md:gap-16 lg:gap-8">
+      <a href="#">
+        <div class="logo w-10 md:w-15 h-10 md:h-15 bg-cover" style="background-image: url(/images/logo.png);"></div>
+      </a>
+      <div>
+        <h3 class="text-sm md:text-lg dark:text-white font-bold mb-4">Connect</h3>
+        <ul>
+          <li class="mb-2"><a href="https://web.facebook.com/zioncityintl/?_rdc=1&_rdr#" target="_blank" class="text-xs md:text-base hover:underline">Facebook</a></li>
+          <li class="mb-2"><a href="https://www.instagram.com/zioncityintl/?hl=en" target="_blank" class="text-xs md:text-base hover:underline">Instagram</a></li>
+          <li><a href="https://www.youtube.com/channel/UC9RmaPmtfVYWJuYig1Q_k3Q" target="_blank" class="text-xs md:text-base hover:underline">YouTube</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm md:text-lg dark:text-white font-bold mb-4">Explore</h3>
+        <ul>
+          <li class="mb-2"><a href="../index.html" class="text-xs md:text-base hover:underline">Home</a></li>
+          <li class="mb-2"><a href="live.html" class="text-xs md:text-base hover:underline">Media</a></li>
+          <li class="mb-2"><a href="schedule.html" class="text-xs md:text-base hover:underline">Schedule</a></li>
+          <li><a href="give.html" class="text-xs md:text-base hover:underline">Give</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-sm md:text-lg dark:text-white font-bold mb-4">Resources</h3>
+        <ul>
+          <li class="mb-2"><a href="contact.html" class="text-xs md:text-base hover:underline">Contact</a></li>
+          <li class="mb-2"><a href="events.html" class="text-xs md:text-base hover:underline">Events</a></li>
+          <li class="mb-2"><a href="live.html" class="text-xs md:text-base hover:underline">Join Live</a></li>
+          <li><a href="about.html" class="text-xs md:text-base hover:underline">About</a></li>
+        </ul>
+      </div>
+      <div>
+            <div class="col-span-1 md:col-span-2">
+                <h3 class="text-base md:text-lg font-bold mb-4">Tuesday Services</h3>
+                <p class="mb-2 text-sm md:text-base">12 PM</p>
+                <p class="mb-4 text-sm md:text-base">Arise and Shine bus-stop Akpajo, east west road, Rivers State.</p>
+                <h3 class="text-base md:text-lg font-bold mb-4">Contact</h3>
+                <p class="mb-2 text-sm md:text-base">+234 8162794773 <br> +234 8057937177</p>
+                <p class="text-sm md:text-base">zioncityworldwide@gmail.com</p>
+            </div>
+    </div>
+  </footer>
+
+  
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  <script src="/scripts/index.js"></script>
+  <script src="/scripts/animate.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+@import "tailwindcss";
+@plugin 'tailwind-scrollbar';
+@plugin "@iconify/tailwind4";
+@import "tailwindcss-animated";
+/* scrollbar */
+
+  .always-show-scrollbar::-webkit-scrollbar {
+    display: block !important;
+  }
+/* global.css or inside a <style> tag */
+.rounded-scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 0.375rem; /* rounded-md = 6px */
+}
+
+.rounded-scrollbar::-webkit-scrollbar {
+  height: 10px;
+   /* Optional: control height for horizontal scroll */
+}
+
+.liquid-glass{
+  background-color: rgba(235, 225, 212, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);}
+
+.liquid-glass-2{
+  background-color: rgba(225, 198, 173, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);}
+
+.liquid-glass-3{
+  background-color: rgba(38, 35, 237, 0.4);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);}
+
+.no-transition {
+  transition: none !important;
+}
+
+.img-container:hover .inner-bg {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.inner-bg {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.bg {
+  position: relative; /* This is crucial for the pseudo-element to be positioned correctly */
+  background-image: url(/images/Annivasary\ \(284\).webp);
+  background-size: cover;
+  background-position: center;
+  /* Other styles like height, width, etc. */
+}
+
+
+.bg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+  z-index: 1; /* Make sure the overlay is above the background image */
+}
+
+.bg > * {
+  position: relative;
+  z-index: 2; /* Make sure the content is above the overlay */
+}
+
+.bg-l {
+  position: relative; /* This is crucial for the pseudo-element to be positioned correctly */
+  background-image: url(/images/Annivasary\ \(284\).webp);
+  background-size: cover;
+  background-position: right;
+  /* Other styles like height, width, etc. */
+}
+
+
+.bg-l::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+  z-index: 1; /* Make sure the overlay is above the background image */
+}
+
+.bg-l > * {
+  position: relative;
+  z-index: 2; /* Make sure the content is above the overlay */
+}
+
+.bg-b {
+  position: relative; /* This is crucial for the pseudo-element to be positioned correctly */
+  background-image: url(/images/Annivasary\ \(284\).webp);
+  background-size: cover;
+  background-position: bottom;
+  /* Other styles like height, width, etc. */
+}
+
+
+.bg-b::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+  z-index: 1; /* Make sure the overlay is above the background image */
+}
+
+.bg-b > * {
+  position: relative;
+  z-index: 2; /* Make sure the content is above the overlay */
+}
+
+.bg-no-r {
+  position: relative; /* This is crucial for the pseudo-element to be positioned correctly */
+  background-size: cover;
+  background-position: right;
+  /* Other styles like height, width, etc. */
+}
+
+
+.bg-no {
+  background-image: url(/images/Annivasary\ \(284\).webp);
+  background-size: cover;
+  background-position: center;
+  /* Other styles like height, width, etc. */
+}
+
+
+.bg-border {
+  position: relative; /* This is crucial for the pseudo-element to be positioned correctly */
+  background-image: url(/images/Annivasary\ \(284\).webp);
+  background-size: cover;
+  background-position: center;
+  /* Other styles like height, width, etc. */
+}
+
+
+.bg-border::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity black overlay */
+  border-radius: 2%;
+  z-index: 1; /* Make sure the overlay is above the background image */
+}
+
+.bg-border > * {
+  position: relative;
+  z-index: 2; /* Make sure the content is above the overlay */
+}
+
+        .sermon-img {
+            /* Ensures the background image covers the div */
+            background-size: cover;
+            background-position: center;
+        }
+        /* Make the title link the entire sermon block */
+
